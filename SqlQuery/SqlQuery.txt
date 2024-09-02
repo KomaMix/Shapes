@@ -1,0 +1,22 @@
+﻿Пусть у нас есть следующие таблицы:
+
+Products:
+	ProductId
+	ProductName
+
+Categories:
+	CategoryId
+	CategoryName
+
+ProductCategories:
+	ProductId
+	CategoryId
+
+
+SELECT Products.ProductName, Categories.CategoryName
+FROM Products
+
+LEFT JOIN
+    ProductCategories ON Products.ProductID = ProductCategories.ProductID
+LEFT JOIN
+    Categories c ON ProductCategories.CategoryID = Categories.CategoryID
