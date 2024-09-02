@@ -12,6 +12,11 @@ namespace TestShapes.Shapes
 
         public Square(double side)
         {
+            if (side < 0)
+            {
+                throw new ArgumentException("Сторона меньше нуля");
+            }
+
             this.Side = side;
         }
 

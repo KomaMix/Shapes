@@ -12,6 +12,11 @@ namespace TestShapes.Shapes
 
         public Circle(int radius)
         {
+            if (radius < 0)
+            {
+                throw new ArgumentException("Радиус меньше нуля");
+            }
+
             this.Radius = radius;
         }
 
