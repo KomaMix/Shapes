@@ -5,7 +5,7 @@ namespace TestShapesTests
     public class ShapesTesting
     {
         [Fact]
-        public void CircleArea()
+        public void CircleAreaTest()
         {
             double radius = 3;
             Circle circle = new Circle(radius);
@@ -15,7 +15,7 @@ namespace TestShapesTests
         }
 
         [Fact]
-        public void SquareArea()
+        public void SquareAreaTest()
         {
             double side = 3;
             Square square = new Square(side);
@@ -25,7 +25,7 @@ namespace TestShapesTests
         }
 
         [Fact]
-        public void TriangleArea()
+        public void TriangleAreaTest()
         {
             double sideA = 3;
             double sideB = 4;
@@ -35,6 +35,16 @@ namespace TestShapesTests
 
             double area = triangle.GetArea();
             Assert.Equal(6, area, 0.0001);
+        }
+
+        [Fact]
+        public void TriangleIsStupidTest()
+        {
+            Triangle triangle = new Triangle(5, 12, 13);
+
+            bool isRight = triangle.IsStupidTriangle();
+
+            Assert.True(isRight);
         }
     }
 }
