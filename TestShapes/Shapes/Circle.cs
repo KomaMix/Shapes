@@ -10,7 +10,7 @@ namespace TestShapes.Shapes
     {
         public double Radius { get; }
 
-        public Circle(int radius)
+        public Circle(double radius)
         {
             if (radius < 0)
             {

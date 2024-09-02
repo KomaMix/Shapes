@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestShapes.Shapes
 {
-    internal class Triangle : IShape
+    public class Triangle : IShape
     {
         public double SideA { get; }
         public double SideB { get; }
