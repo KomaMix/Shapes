@@ -20,5 +20,5 @@ Console.WriteLine("Площадь фигуры: " + shape.GetArea());
 if (shape.GetType() == typeof(Triangle) && shape is not null)
 {
     Console.WriteLine("Этот треугольник " +
-        ((shape as Triangle).IsStupidTriangle() ? "тупой" : "обычный"));
+        ((shape as Triangle).IsRightTriangle() ? "прямоугольный" : "обычный"));
 }

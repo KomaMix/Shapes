@@ -33,7 +33,7 @@ namespace TestShapes.Shapes
             return Math.Sqrt(p * (p - SideA) * (p - SideB) * (p - SideC));
         }
 
-        public bool IsStupidTriangle()
+        public bool IsRightTriangle()
         {
             double[] sides = { SideA, SideB, SideC };
             Array.Sort(sides);
