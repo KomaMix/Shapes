@@ -42,7 +42,7 @@ namespace TestShapesTests
         {
             Triangle triangle = new Triangle(5, 12, 13);
 
-            bool isRight = triangle.IsStupidTriangle();
+            bool isRight = triangle.IsRightTriangle();
 
             Assert.True(isRight);
         }
